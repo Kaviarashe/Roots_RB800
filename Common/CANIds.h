@@ -1,0 +1,77 @@
+/*
+ * intercommunication.h
+ *
+ * Created: 20/09/2015 9:00:15 AM
+ *  Author: Vijay
+ */
+
+
+#ifndef CANIDS_H_
+#define CANIDS_H_
+
+
+#define BRUSH_MOTOR_CAN		0x10
+#define VACUUM_MOTOR_CAN	0x11
+#define DETERGENT_PUMP_CAN	0x12
+#define WATER_PUMP_CAN		0x13
+#define HEADLIGHTS_CAN		0x20
+#define EXTRA_PRESSURE_CAN	0x21
+#define HORN_CAN			0x22
+#define FORWARD_REVERSE_CAN	0x30
+#define TRANSPORT_CAN		0x31
+#define SLOW_FAST_CAN		0x32
+#define ECO_CAN				0x40
+#define BATTERY_CAN			0xBA
+#define TOP_CAN				0xAA
+#define FLOAT_CAN			0xAB
+#define ALARM_CAN			0xAC
+#define BRUSH_STATE			0xAD
+#define VACUUM_STATE		0xAE
+#define RUNTIMER_CAN		0xCD
+#define CHECK_CAN			0xFA
+#define ACCEL_PDL_CAN		0xA0
+#define MOTOR_INFO_CAN		0xA1
+#define DM_SETTINGS_CAN		0xA2
+#define BACK_SAFETY_CAN		0xA3
+#define POT_CALIBRATION_CAN	0xA4
+#define RESET_DEFAULT_CAN	0xA5
+#define DRIVE_CURRENT_CAN	0xA6
+#define MAX_DRIVE_CURRENT_CAN	0xA7
+#define A2_SETTINGS_CAN		0xA8
+#define EVENT_LOG_CAN		0xEE
+#define EVENT_LOG_READ_CAN	0xEF
+#define ACK_CAN				0xDE
+#define A1_SERIAL_NUM_CAN	0x51
+#define A2_SERIAL_NUM_CAN	0x52
+#define A3_SERIAL_NUM_CAN	0x53
+#define STATISTICS_CAN		0x66
+#define ERASE_SD_CAN		0x91
+#define EMERGENCY_OFF_CAN   0x93
+ //#define RESET_DEVICE_CAN	0x99
+#define REQUEST_POT_VALUE_CAN 0x96
+#define POT_VALUE_CAN 0x97
+///////// RESET ISSUS TESTING PURPOSE/////
+#define RESET_DEVICE_CAN_A1	0x99
+#define RESET_DEVICE_CAN_A2	0x95
+#define RESET_DEVICE_CAN_A3	0x94
+#define RESET_FLAG_COUNT_A1 0X90   // in A1 CAN
+#define RESET_FLAG_COUNT_A2 0X98   // in A2 CAN
+#define RESET_FLAG_COUNT_A3 0X92   // in A3 CAN
+///////////////////////////////////////////
+
+#define BRUSH_SLOW_START_CAN 0x81
+#define VACCUM_SLOW_START_CAN 0x82
+#define PRESWEEP_SLOW_START_CAN 0x83
+
+#define ACCELERATION_CAN		0x70
+#define DECELERATION_CAN		0x71
+#define BREAK_DELAY_CAN			0x72
+#define SLOW_SPEED_CAN			0x73
+#define FAST_SPEED_CAN			0x74
+#define REVERSE_SPEED_CAN		0x75
+#define CURRENT_RATING_CAN		0x76
+#define MAX_CURRENT_CAN			0x77
+#define OVER_LOAD_TIME_CAN		0x78
+
+
+#endif /* CANIDS_H_*/

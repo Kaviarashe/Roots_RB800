@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Common\emu.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_CAN.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_eeprom.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_lcd.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_stub.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\can_queue.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\intercommunication.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\lcd_screen.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\motor.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\motor_settings.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\SPI.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\timers.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\twi_master_driver.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\adc.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\CAN.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A3\RB_800_DM\RB_800_A3.c">
+      <Filter>target</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\avr_stubs\emu_CAN.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\avr_stubs\emu_lcd.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\avr_stubs\emu_stub.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\intercommunication.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\lcd_screen.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\motor.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\motor_settings.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\RB_800.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\SPI.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\timers.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\twi_master_driver.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\adc.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\avr_compiler.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\CAN.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\can_queue.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A3\RB_800_DM\eep_defs.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="emu">
+      <UniqueIdentifier>{b67c6678-aa05-4be9-b602-7e02e06a0e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target">
+      <UniqueIdentifier>{9e364055-db43-402d-a4dc-0cb2ab55f896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target\include">
+      <UniqueIdentifier>{3b7e52fe-012d-4407-83c7-6a0286dca6a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

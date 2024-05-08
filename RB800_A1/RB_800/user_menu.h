@@ -1,0 +1,108 @@
+/*
+ * user_menu.h
+ *
+ * Created: 8/24/2016 1:55:23 PM
+ *  Author: Anurag Vaddi Reddy
+ */
+
+
+#ifndef USER_MENU_H_
+#define USER_MENU_H_
+
+#include "RB_800.h"
+
+#define PRE_MENU		0x00
+
+#define MOTOR_MENU		0x01
+#define BATTERY_MENU	0x02
+#define ABOUT_MENU		0x03
+#define DEFAULT_MENU	0x04
+
+#define ACCELERATION_MENU		0x10
+#define DECELERATION_MENU		0x11
+#define BRAKE_DELAY_MENU		0x12
+#define REVERSE_SPEED_MENU		0x13
+#define SLOW_SPEED_MENU			0x14
+#define FAST_SPEED_MENU			0x15
+#define CURRENT_RATING_MENU		0x16
+#define MAX_CURRENT_MENU		0x17
+#define OVERLOAD_TIME_MENU		0x18
+#define FORWARD_SPEED_MENU		0x19
+#define VACUUM_SETTINGS_MENU	0x1A
+#define VACUUM_SLOW_START_MENU	0x1B
+#define BRUSH_SETTINGS_MENU		0x1C
+#define BRUSH_SLOW_START_MENU	0x1D
+#define PRE_SWP_SETTINGS_MENU	0x1E
+#define PRE_SWP_SLOW_START_MENU	0x1F
+
+#define POTENTIOMETER_MENU			0x80
+#define POT_TYPE_MENU				0x81
+#define POT_CALIBRATION_MENU		0x82
+#define POT_TYPE_VAL_MENU			0x83
+#define POT_CALIBRATION_VAL_MENU	0x84
+#define POT_RECALIBRATION_MENU		0x85
+#define POT_VALUE_MENU				0x86
+#define POT_MENU					0X87
+
+#define ACCELERATION_VAL_MENU		0x20
+#define DECELERATION_VAL_MENU		0x21
+#define BRAKE_DELAY_VAL_MENU		0x22
+#define REVERSE_SPEED_VAL_MENU		0x23
+#define SLOW_SPEED_VAL_MENU			0x24
+#define FAST_SPEED_VAL_MENU			0x25
+#define CURRENT_RATING_VAL_MENU		0x26
+#define MAX_CURRENT_VAL_MENU		0x27
+#define OVERLOAD_TIME_VAL_MENU		0x28
+#define VACUUM_SLOW_START_VAL_MENU	0x29
+#define BRUSH_SLOW_START_VAL_MENU	0x2A
+#define PRE_SWP_SLOW_START_VAL_MENU	0x2B
+
+#define LEAD_MENU		0x30
+#define AGM_MENU		0x31
+#define GEL_MENU		0x32
+
+ /*#define PCB_MENU			0x40
+ #define FIRMWARE_MENU		0x41
+ #define PCB_VAL_MENU		0x42
+ #define FIRMWARE_VAL_MENU	0x43*/
+
+#define A1_PCB_MENU				0x40
+#define A1_FIRMWARE_MENU		0x41
+#define A1_PCB_VAL_MENU			0x42
+#define A1_FIRMWARE_VAL_MENU	0x43
+#define A2_PCB_MENU				0x44
+#define A2_FIRMWARE_MENU		0x45
+#define A2_PCB_VAL_MENU			0x46
+#define A2_FIRMWARE_VAL_MENU	0x47
+#define A3_PCB_MENU				0x48
+#define A3_FIRMWARE_MENU		0x49
+#define A3_PCB_VAL_MENU			0x4A
+#define A3_FIRMWARE_VAL_MENU	0x4B
+
+#define A1_MENU		0xA1
+#define A2_MENU		0xA2
+#define A3_MENU		0xA3
+#define RB800_MENU	0xAA
+
+#define DEFAULT_CONFIRM_MENU	0x50
+
+#define SERIAL_NUM_MENU		0x60
+#define SERIAL_NUM_VAL_MENU	0x61
+
+#define A1_SERIAL_NUM_MENU			0x62
+#define A1_SERIAL_NUM_VAL_MENU		0x63
+#define A2_SERIAL_NUM_MENU			0x64
+#define A2_SERIAL_NUM_VAL_MENU		0x65
+#define A3_SERIAL_NUM_MENU			0x66
+#define A3_SERIAL_NUM_VAL_MENU		0x67
+#define RB800_SERIAL_NUM_MENU		0x68
+#define RB800_SERIAL_NUM_VAL_MENU	0x69
+
+#define RUN_TIME_MENU		0x70
+#define RUN_TIME_VAL_MENU	0x71
+
+#define ASCII_NUM	0x30
+
+void start_u_menu(void);
+
+#endif /* USER_MENU_H_ */

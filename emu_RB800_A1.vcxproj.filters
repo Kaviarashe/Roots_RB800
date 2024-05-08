@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Common\emu.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_CAN.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_eeprom.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_Keyb.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_lcd.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\avr_stubs\emu_stub.c">
+      <Filter>emu</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\battery.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\CAN.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\can_queue.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\event_logging.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\intercommunication.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\keypad.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\keypad_settings.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\lcd_screen.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\RB_settings.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\settings_menu.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\SPI.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\test_mode.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\timers.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\twi_master_driver.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\user_menu.c">
+      <Filter>target</Filter>
+    </ClCompile>
+    <ClCompile Include="RB800_A1\RB_800\RB_800_A1.c">
+      <Filter>target</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\avr_stubs\emu_CAN.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\avr_stubs\emu_keyb.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\avr_stubs\emu_lcd.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\avr_stubs\emu_stub.h">
+      <Filter>emu</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\alarm.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\avr_compiler.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\battery.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\can_queue.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\CAN.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\event_logging.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\intercommunication.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\keypad.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\keypad_settings.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\lcd_screen.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\RB_800.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\RB_settings.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\settings_menu.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\SPI.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\test_mode.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\timers.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\twi_master_driver.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\user_menu.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RB800_A1\RB_800\eep_defs.h">
+      <Filter>target\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="emu">
+      <UniqueIdentifier>{b67c6678-aa05-4be9-b602-7e02e06a0e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target">
+      <UniqueIdentifier>{9e364055-db43-402d-a4dc-0cb2ab55f895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target\include">
+      <UniqueIdentifier>{3b7e52fe-012d-4407-83c7-6a0286dca6a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

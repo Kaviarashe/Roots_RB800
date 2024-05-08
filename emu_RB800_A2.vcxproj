@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1EFF6F7B-8AEB-476F-A08E-D183155CC21E}</ProjectGuid>
+    <RootNamespace>emu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>emu_RB800_A2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Lib</OutDir>
+    <IntDir>$(ProjectName)\tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Lib</OutDir>
+    <IntDir>$(ProjectName)\tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Lib</OutDir>
+    <IntDir>$(ProjectName)\tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Lib</OutDir>
+    <IntDir>$(ProjectName)\tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\avr_stubs;$(MSBuildProjectDirectory)\RB800_A2\RB_800_M</AdditionalIncludeDirectories>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>BOARD_A2</PreprocessorDefinitions>
+      <ForcedIncludeFiles>emu_stub.h</ForcedIncludeFiles>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\avr_stubs;$(MSBuildProjectDirectory)\RB800_A2\RB_800_M</AdditionalIncludeDirectories>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>BOARD_A2</PreprocessorDefinitions>
+      <ForcedIncludeFiles>emu_stub.h</ForcedIncludeFiles>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\avr_stubs;$(MSBuildProjectDirectory)\RB800_A2\RB_800_M</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <BrowseInformation>true</BrowseInformation>
+      <CallingConvention>StdCall</CallingConvention>
+      <PreprocessorDefinitions>BOARD_A2</PreprocessorDefinitions>
+      <ForcedIncludeFiles>emu_stub.h</ForcedIncludeFiles>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\avr_stubs;$(MSBuildProjectDirectory)\RB800_A2\RB_800_M</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <BrowseInformation>true</BrowseInformation>
+      <CallingConvention>StdCall</CallingConvention>
+      <PreprocessorDefinitions>BOARD_A2</PreprocessorDefinitions>
+      <ForcedIncludeFiles>emu_stub.h</ForcedIncludeFiles>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\avr_stubs\emu_CAN.c" />
+    <ClCompile Include="..\avr_stubs\emu_eeprom.c" />
+    <ClCompile Include="..\avr_stubs\emu_SDCard.c" />
+    <ClCompile Include="..\avr_stubs\emu_stub.c" />
+    <ClCompile Include="..\avr_stubs\emu_lcd.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\adc.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\alarm.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\CAN.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\can_queue.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\event_logging.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\event_log_queue.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\intercommunication.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\lcd_screen.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\motor.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\RB_800_A2.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\RB_settings.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\SD_card.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\SPI.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\timers.c" />
+    <ClCompile Include="RB800_A2\RB_800_M\twi_master_driver.c" />
+    <ClCompile Include="Common\emu.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\avr_stubs\emu_CAN.h" />
+    <ClInclude Include="..\avr_stubs\emu_lcd.h" />
+    <ClInclude Include="..\avr_stubs\emu_SDCard.h" />
+    <ClInclude Include="..\avr_stubs\emu_stub.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\adc.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\alarm.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\avr_compiler.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\CAN.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\can_queue.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\eep_defs.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\event_logging.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\event_log_queue.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\intercommunication.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\keypad_settings.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\lcd_screen.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\motor.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\RB_800.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\RB_settings.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\SD_card.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\SPI.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\timers.h" />
+    <ClInclude Include="RB800_A2\RB_800_M\twi_master_driver.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
